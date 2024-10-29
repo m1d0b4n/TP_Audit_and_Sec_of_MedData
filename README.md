@@ -6,5 +6,3 @@ de cybersécurité appelée SecureSys, spécialisée dans l’audit et la sécur
 systèmes d’information de ses clients. SecureSys a récemment décroché un contrat
 pour moderniser et sécuriser l’infrastructure d’un client critique, MedData, une
 société de stockage et d’analyse de données médicales.
-
-<a target="_blank" href="https://drive.google.com/drive/folders/1H-HHgKykJQv47Pse6RHFUGXRcTOn-6jM?usp=sharing">Google Drive</a>
