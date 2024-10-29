@@ -1,5 +1,7 @@
 # TP_Audit_and_Sec_of_MedData
 
+Sheet : https://docs.google.com/spreadsheets/d/1XvWQNQzAnKbWD-0D9eBsL0U_-tRf3FvEn-q8G1mWne0/edit?usp=sharing
+
 ## Scénario :
 Vous êtes des administrateurs réseaux et sécurité travaillant pour une petite entreprise
 de cybersécurité appelée SecureSys, spécialisée dans l’audit et la sécurisation des
