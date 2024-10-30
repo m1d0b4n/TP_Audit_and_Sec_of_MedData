@@ -1,42 +1,37 @@
 ```
 .
-├── Réseau
-│   ├── Routeur de bordure
-│   │   └── IP : 10.0.1.1
-│   ├── Switch principal
-│   │   └── IP : 10.0.1.3
-│   ├── Pare-feu UTM (Sophos XG 115)
-│   │   └── IP : 10.0.1.4
-│   └── Point d’accès Wi-Fi
-│       └── IP : 10.0.5.1
-├── VLAN Administration (10.0.1.0/24)
-│   ├── Serveur Bastion SSH
-│   │   └── IP : 10.0.1.2
-│   ├── Switch d’administration
-│   │   └── Interface de gestion sécurisée
-│   └── Gestion des ACLs
-│       └── ACL pour restreindre les accès au VLAN Applicatif et Bases de données
-├── VLAN Applicatif (10.0.2.0/24)
-│   ├── Serveur Nextcloud
-│   │   └── IP : 10.0.2.10
-│   └── Serveur de fichiers (NAS Synology)
-│       ├── IP : 10.0.2.11
-│       ├── Chiffrement des données LVM + LUKS
-│       └── Stockage RAID 6
-├── VLAN Bases de données (10.0.3.0/24)
-│   └── Serveur Base de données (MySQL)
-│       ├── IP : 10.0.3.10
-│       ├── Accès restreint depuis le VLAN Applicatif
-│       └── Sauvegardes régulières sur NAS
-├── VLAN DMZ (10.0.4.0/24)
-│   └── Serveur Web public
-│       ├── IP : 10.0.4.10
-│       ├── HTTPS activé avec certificat SSL/TLS
-│       └── Accès limité aux services HTTP/HTTPS depuis l’extérieur
-└── VLAN Utilisateurs (10.0.5.0/24)
-    ├── Point d’accès Wi-Fi
-    │   └── IP : 10.0.5.1
-    └── Plage DHCP pour terminaux employés
-        ├── Plage IP : 10.0.5.100 - 10.0.5.200
-        └── Accès restreint aux VLANs Applicatif et DMZ
+├── Hyperviseur (Proxmox)
+│   └── Noeud PVE
+│       ├── VLAN Administration (10.0.1.0/24)
+│       │   └── VM - Bastion (Debian)
+│       │       └── IP : 10.0.1.2
+│       │       └── Rôle : Point d'accès SSH sécurisé pour les administrateurs
+│       │
+│       ├── VLAN Applicatif (10.0.2.0/24)
+│       │   └── VM - Stockage Nextcloud (CentOS)
+│       │       └── IP : 10.0.2.10
+│       │       └── Rôle : Serveur de stockage pour Nextcloud
+│       │       └── Configuration : LVM + LUKS pour le chiffrement, RAID pour la redondance
+│       │
+│       ├── VLAN Bases de données (10.0.3.0/24)
+│       │   └── VM - Serveur Base de données (MySQL)
+│       │       └── IP : 10.0.3.10
+│       │       └── Rôle : Base de données Nextcloud, accessible depuis le VLAN Applicatif
+│       │       └── Configuration : Accès sécurisé avec ACLs et authentification forte
+│       │
+│       ├── VLAN Sauvegarde (10.0.4.0/24)
+│       │   └── VM - Sauvegarde (Debian)
+│       │       └── IP : 10.0.4.10
+│       │       └── Rôle : Serveur de sauvegarde pour les VMs
+│       │       └── Configuration : Snapshots et planification des sauvegardes
+│       │
+│       ├── VLAN Monitoring (10.0.5.0/24)
+│       │   └── VM - Zabbix (Debian)
+│       │       └── IP : 10.0.5.10
+│       │       └── Rôle : Surveillance et monitoring de l'infrastructure
+│       │       └── Configuration : Alertes et tableaux de bord
+│       │
+│       └── VLAN Utilisateurs (10.0.6.0/24)
+│           └── Terminaux utilisateurs (Plage DHCP : 10.0.6.100 - 10.0.6.200)
+│               └── Rôle : Accès utilisateur final avec restrictions d'accès
 ```
