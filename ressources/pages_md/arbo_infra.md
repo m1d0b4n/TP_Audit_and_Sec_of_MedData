@@ -8,7 +8,7 @@
 │       │       └── Rôle : Point d'accès SSH sécurisé pour les administrateurs
 │       │
 │       ├── VLAN Applicatif (10.0.2.0/24)
-│       │   └── VM - Stockage Nextcloud (CentOS)
+│       │   └── VM - Serveur Nextcloud (CentOS)
 │       │       └── IP : 10.0.2.10
 │       │       └── Rôle : Serveur de stockage pour Nextcloud
 │       │       └── Configuration : LVM + LUKS pour le chiffrement, RAID pour la redondance
