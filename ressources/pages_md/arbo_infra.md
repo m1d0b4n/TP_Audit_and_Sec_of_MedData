@@ -8,16 +8,16 @@
 │       │       └── Rôle : Point d'accès SSH sécurisé pour les administrateurs
 │       │
 │       ├── VLAN Applicatif (10.0.2.0/24)
-│       │   └── VM - Serveur Nextcloud (CentOS)
+│       │   └── VM - Stockage Nextcloud (CentOS)
 │       │       └── IP : 10.0.2.10
-│       │       └── Rôle : Serveur de stockage pour Nextcloud
-│       │       └── Configuration : LVM + LUKS pour le chiffrement, RAID pour la redondance
+│       │       └── Rôle : Serveur Nextcloud pour le stockage
+│       │       └── Configuration : Connexion à la base de données dans le VLAN Bases de données
 │       │
 │       ├── VLAN Bases de données (10.0.3.0/24)
-│       │   └── VM - Serveur Base de données (MySQL)
+│       │   └── VM - Serveur Base de données MySQL
 │       │       └── IP : 10.0.3.10
-│       │       └── Rôle : Base de données Nextcloud, accessible depuis le VLAN Applicatif
-│       │       └── Configuration : Accès sécurisé avec ACLs et authentification forte
+│       │       └── Rôle : Base de données Nextcloud, uniquement accessible depuis le serveur Nextcloud
+│       │       └── Configuration : Accès limité aux requêtes de 10.0.2.10 via ACLs
 │       │
 │       ├── VLAN Sauvegarde (10.0.4.0/24)
 │       │   └── VM - Sauvegarde (Debian)
