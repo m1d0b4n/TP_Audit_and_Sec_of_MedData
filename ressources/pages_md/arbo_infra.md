@@ -14,7 +14,7 @@
 │       │       └── Configuration : Connexion à la base de données dans le VLAN Bases de données
 │       │
 │       ├── VLAN Bases de données (10.0.3.0/24)
-│       │   └── VM - Serveur Base de données MySQL
+│       │   └── VM - Serveur Base de données (CentOS)
 │       │       └── IP : 10.0.3.10
 │       │       └── Rôle : Base de données Nextcloud, uniquement accessible depuis le serveur Nextcloud
 │       │       └── Configuration : Accès limité aux requêtes de 10.0.2.10 via ACLs
