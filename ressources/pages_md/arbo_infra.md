@@ -8,7 +8,7 @@
 │       │       └── Rôle : Point d'accès SSH sécurisé pour les administrateurs
 │       │
 │       ├── VLAN Applicatif (10.0.2.0/24)
-│       │   └── VM - Stockage Nextcloud (CentOS)
+│       │   └── VM - Server Nextcloud (CentOS)
 │       │       └── IP : 10.0.2.10
 │       │       └── Rôle : Serveur Nextcloud pour le stockage
 │       │       └── Configuration : Connexion à la base de données dans le VLAN Bases de données
