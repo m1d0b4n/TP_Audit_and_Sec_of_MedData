@@ -69,6 +69,14 @@ git clone https://github.com/m1d0b4n/TP_Audit_and_Sec_of_MedData.git
 </details>
 
 <details>
+<summary>Aperçu de l'interface PROXMOX</summary>
+<br>
+
+![image](./ressources/images/visu_proxmox.png)
+
+</details>
+
+<details>
 <summary>Plan réseau Cisco Packet Tracer</summary>
 <br>
 
@@ -86,12 +94,24 @@ git clone https://github.com/m1d0b4n/TP_Audit_and_Sec_of_MedData.git
 | **Médecins**            | Dr. Gregory House            | Médecin généraliste                          | Accès à Nextcloud, limité aux dossiers médicaux des patients                              |
 |                         | Dr. Anna Tomie           | Médecin spécialiste                          | Accès à Nextcloud, accès restreint aux dossiers liés à son domaine                        |
 | **Assistants médicaux** | Anne Tiseptique             | Assistante médicale                          | Accès à Nextcloud, accès restreint aux dossiers des patients pour mise à jour administrative |
-| **Analystes de données**| Bill Athéral                | Analyste de données médicales                | Accès limité à Nextcloud pour les données et rapports |
-| **Techniciens de maintenance** | Rémi Dié        | Technicien IT                                | Accès au serveur Bastion, équipements réseau et VLAN Administration pour support, accès à Zabbix pour monitoring |
+| **Analystes de données**| Bill Athéral                | Analyste de données médicales                | Accès limité à Nextcloud pour les données et rapports, accès à Zabbix pour monitoring     |
+| **Techniciens de maintenance** | Rémi Dié        | Technicien IT                                | Accès au serveur Bastion, équipements réseau et VLAN Administration pour support          |
 | **R&D**                 | Dr. Patricia Ologie           | Chercheur principal                          | Accès aux dossiers de recherche dans Nextcloud, accès restreint aux données sensibles      |
 | **RH et Administratif** | Vita Mine             | Responsable RH                               | Accès aux documents administratifs et RH dans Nextcloud                                   |
 | **Comptabilité**        | Alex Pyration       | Comptable principal                          | Accès aux dossiers financiers dans Nextcloud                                              |
 | **Internes et Stagiaires** | Emma Taume          | Interne                                      | Accès restreint dans Nextcloud, uniquement aux documents de formation                     |
 
+
+</details>
+
+<details>
+<summary>Mise en place des 5 serveurs</summary>
+<br>
+
+<details>
+<summary>SRV-NEXTCLOUD</summary>
+<br>
+
+</details>
 
 </details>
