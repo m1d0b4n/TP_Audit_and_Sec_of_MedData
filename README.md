@@ -114,4 +114,28 @@ git clone https://github.com/m1d0b4n/TP_Audit_and_Sec_of_MedData.git
 
 </details>
 
+<details>
+<summary>SRV-BACKUP</summary>
+<br>
+
+</details>
+
+<details>
+<summary>SRV-ZABBIX</summary>
+<br>
+
+</details>
+
+<details>
+<summary>SRV-BASTION</summary>
+<br>
+
+</details>
+
+<details>
+<summary>SRV-BDD</summary>
+<br>
+
+</details>
+
 </details>
