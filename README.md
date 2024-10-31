@@ -140,6 +140,14 @@ git clone https://github.com/m1d0b4n/TP_Audit_and_Sec_of_MedData.git
 
 ![image](./ressources/images/PKT/TEST%20ACCESS-LIST%20BDD%20ET%20NEXTCLOUD.png)
 
+![image](./ressources/images/PKT/Sécurisation%20des%20ports%20console%20des%20appareils%20réseaux%20switch.png)
+
+![image](./ressources/images/PKT/Sécurisation%20des%20ports%20consoles%20router.png)
+
+![image](./ressources/images/PKT/Sécurisation%20du%20niveau%20de%20privilégié%20switch.png)
+
+![image](./ressources/images/PKT/Sécurisation%20du%20niveau%20priviligié%20router.png)
+
 
 
 
