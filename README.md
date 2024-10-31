@@ -81,6 +81,7 @@ git clone https://github.com/m1d0b4n/TP_Audit_and_Sec_of_MedData.git
 <br>
 
 * Le fichier Packet Tracer ce trouve dans le répertoire : ```./ressources/tp_packettracer.pkt```
+* Ce réferer également à la table d'adressage : ```./ressources/table_adressage_IP```
 
 >Voici un aperçu :
 ![image](./ressources/images/visu_packettracer.png)
