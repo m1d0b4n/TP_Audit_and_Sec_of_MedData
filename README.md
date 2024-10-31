@@ -1,4 +1,4 @@
-# TP_Audit_and_Sec_of_MedData
+# TP Audit and Sec of MedData
 
 ## Scénario :
 Vous êtes des administrateurs réseaux et sécurité travaillant pour une petite entreprise
