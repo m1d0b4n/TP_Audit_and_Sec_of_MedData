@@ -142,7 +142,9 @@ git clone https://github.com/m1d0b4n/TP_Audit_and_Sec_of_MedData.git
 <summary>SRV-BDD</summary>
 <br>
 
-A) Créez les administrateurs clement, kevin, et rudy avec la commande suivante pour chacun :
+A) Créez les administrateurs
+
+*Créez clement, kevin, et rudy avec la commande suivante pour chacun :
 
 ```
 adduser clement
@@ -178,7 +180,23 @@ usermod -aG sudo rudy
 
 ```sudo ls /root```
 
-B) Mise en place d'un serveur NFS pour avoir un espace de stockage en réseau sur lequel on installera la base de données NextCloud.
+B) Configuration du serveur SSH
+
+* Editez le fichier de configuration du serveur :
+```nano /etc/ssh/sshd_config```
+
+* Modifier les lignes suivantes :
+```
+Port 2345
+ListenAddress 10.0.2.10   # SRV-NEXTCLOUD
+ListenAddress 10.0.1.2    # SRV-BASTION
+PermitRootLogin no        # connection au compte root interdite
+MaxAuthTries 3            # 3 erreur de mdp autorisés
+MaxSessions 1             # 1 session max en simultané
+```
+![image](./ressources/images/sshd_config.png)
+
+C) Mise en place d'un serveur NFS pour avoir un espace de stockage en réseau sur lequel on installera la base de données NextCloud.
 
 
 </details>
