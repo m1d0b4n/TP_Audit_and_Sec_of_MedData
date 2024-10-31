@@ -80,6 +80,11 @@ git clone https://github.com/m1d0b4n/TP_Audit_and_Sec_of_MedData.git
 <summary>Plan réseau Cisco Packet Tracer</summary>
 <br>
 
+* Le fichier Packet Tracer ce trouve dans le répertoire : ```./ressources/tp_packettracer.pkt```
+
+>Voici un aperçu :
+![image](./ressources/images/visu_packettracer.png)
+
 </details>
 
 <details>
