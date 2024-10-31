@@ -178,8 +178,8 @@ usermod -aG sudo rudy
 
 ```sudo ls /root```
 
-* Mise en place d'un serveur NFS pour avoir un espace de staockage en réseau sur lequel on installera la base de données NextCloud.
-  
+* Mise en place d'un serveur NFS pour avoir un espace de stockage en réseau sur lequel on installera la base de données NextCloud.
+
 
 </details>
 
