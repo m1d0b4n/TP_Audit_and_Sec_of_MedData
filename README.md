@@ -12,7 +12,7 @@ société de stockage et d’analyse de données médicales.
 >### **Aperçu du projet**
 
 ![maquette](./ressources/images/maquette.png)
-<br>
+
 <br>
 
 Il est préférable de cloner ce repo pour posséder directement l'intégralité des fichiers et pouvoir les consulter en local, commande :
