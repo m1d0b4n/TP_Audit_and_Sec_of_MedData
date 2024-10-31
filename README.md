@@ -9,7 +9,7 @@ société de stockage et d’analyse de données médicales.
 
 <br>
 
->### **Aperçu du projet**
+### **Aperçu du projet**
 
 ![maquette](./ressources/images/maquette.png)
 
@@ -23,10 +23,11 @@ git clone https://github.com/m1d0b4n/TP_Audit_and_Sec_of_MedData.git
 
 <br>
 
-### Table des matières
+### **Table des matières**
 
 <details>
-<summary>Arborescence de l'infra</summary>
+<summary>Arborescence de l'infrastructure réseau</summary>
+<br>
 
 ```
 .
@@ -65,3 +66,10 @@ git clone https://github.com/m1d0b4n/TP_Audit_and_Sec_of_MedData.git
 │           └── Terminaux utilisateurs (Plage DHCP : 10.0.6.100 - 10.0.6.200)
 │               └── Rôle : Accès utilisateur final avec restrictions d'accès
 ```
+</details>
+
+<details>
+<summary>Plan réseau Cisco Packet Tracer</summary>
+<br>
+
+</details>
