@@ -142,6 +142,45 @@ git clone https://github.com/m1d0b4n/TP_Audit_and_Sec_of_MedData.git
 <summary>SRV-BDD</summary>
 <br>
 
+* Créez les administrateurs clement, kevin, et rudy avec la commande suivante pour chacun :
+
+```
+adduser clement
+adduser kevin
+adduser rudy
+```
+
+* Vous serez invité à définir un mot de passe pour chaque utilisateur.
+
+* Ajoutez chaque utilisateur au groupe sudo en exécutant ces commandes (toujours en tant que root) :
+
+```
+usermod -aG sudo clement
+usermod -aG sudo kevin
+usermod -aG sudo rudy
+```
+
+* Pour garantir qu'ils ont bien les permissions sudo, éditez le fichier sudoers en suivant ces étapes :
+
+
+    1- Ouvrir le fichier sudoers avec visudo : ```visudo```
+
+    2- Dans l’éditeur, ajoutez ces lignes à la fin pour donner des droits sudo à clement, kevin, et rudy :
+    ```
+    clement ALL=(ALL:ALL) ALL
+    kevin ALL=(ALL:ALL) ALL
+    rudy ALL=(ALL:ALL) ALL
+    ```
+
+    3- Enregistrez les modifications et quittez l'éditeur (Ctrl+X puis Y pour nano, ou :wq pour vim).
+
+* Vérification des droits sudo, connectez-vous avec chaque utilisateur (clement, kevin, et rudy) pour vérifier qu’ils peuvent exécuter des commandes avec sudo :
+
+```sudo ls /root```
+
+* Mise en place d'un serveur NFS pour avoir un espace de staockage en réseau sur lequel on installera la base de données NextCloud.
+  
+
 </details>
 
 </details>
